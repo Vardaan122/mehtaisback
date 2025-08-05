@@ -1,0 +1,140 @@
+import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+
+export default function Home() {
+  const telegramLink = "http://Telegram.me/+dd__3VG9w1E2ZjI1";
+
+  return (
+    <div className="min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 lg:p-8 bg-[var(--trading-dark)]">
+      {/* Contact Button Section */}
+      <div className="mb-8 w-full max-w-md">
+        <Card className="bg-[var(--trading-secondary)] rounded-2xl p-6 border border-gray-800 shadow-2xl">
+          <div className="flex items-center justify-center mb-4">
+            <img 
+              src="https://scalpertrader.site/newme.jpg" 
+              alt="Trading Expert Profile" 
+              className="w-20 h-20 rounded-full border-4 border-[var(--trading-accent)] shadow-lg"
+              data-testid="img-profile-expert"
+            />
+          </div>
+          <div className="text-center">
+            <h3 className="text-[var(--trading-accent)] font-bold text-lg mb-2" data-testid="text-demo-call">
+              DAILY FREE DEMO CALL MILEGI
+            </h3>  <Button 
+              className="trading-accent-gradient text-[var(--trading-dark)] font-bold py-3 px-8 rounded-xl hover:shadow-lg hover:scale-105 transition-all duration-300 w-full"
+              data-testid="button-contact"
+            >
+          
+            </Button>
+          </div>
+        </Card>
+      </div>
+
+      {/* Main Heading Section */}
+      <div className="text-center mb-8 w-full max-w-4xl">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black mb-6 trading-gradient-text leading-tight" data-testid="heading-main">
+          MEHATA IS BACK
+        </h1>
+        <div className="bg-[var(--trading-orange)] text-white font-bold py-2 px-6 rounded-full inline-block text-lg sm:text-xl mb-8 shadow-lg" data-testid="badge-official">
+          ( OFFICIAL )
+        </div>
+      </div>
+
+      {/* Primary Join Button */}
+      <div className="mb-8 w-full max-w-md">
+        <a 
+          href={telegramLink}
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="block trading-blue-gradient text-white font-bold py-4 px-8 rounded-xl text-center text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 border-2 border-transparent hover:border-[var(--trading-blue)]"
+          data-testid="link-primary-telegram"
+        >
+          <span className="block text-sm opacity-90 mb-1">JOIN NOW FOR FREE</span>
+          <span className="block text-xl">🚀 TELEGRAM CHANNEL</span>
+        </a>
+      </div>
+
+      {/* Main Content Section */}
+      <Card className="bg-[var(--trading-secondary)] rounded-3xl p-6 sm:p-8 border border-gray-800 shadow-2xl w-full max-w-2xl mb-8">
+        <div className="text-center mb-6">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[var(--trading-accent)] mb-4" data-testid="heading-services">
+            NIFTY BANKNIFTY & STOCK OPTIONS..✌️ ⚡
+          </h2>
+          
+          <div className="space-y-4 text-base sm:text-lg leading-relaxed">
+            <p className="font-semibold text-white" data-testid="text-channel-description">
+              India's Best STOCK MARKET channel MEHATA IS BACK
+            </p>
+            
+            <p className="text-gray-300" data-testid="text-calls-info">
+              ALL CALLS WITH PROPER STOP LOSS & TARGET
+            </p>
+            
+            <p className="text-gray-400 text-sm" data-testid="text-disclaimer">
+              WE PROVIDES VIEWS IN F&O TRADES FOR STUDY PURPOSE ONLY
+            </p>
+            
+            <div className="bg-gradient-to-r from-[var(--trading-accent)]/20 to-green-400/20 rounded-xl p-4 border border-[var(--trading-accent)]/30">
+              <p className="text-[var(--trading-accent)] font-bold text-lg" data-testid="text-daily-calls">
+                💰 DAILY 5-7 CALLS BY OUR EXPERT 💰
+              </p>
+            </div>
+          </div>
+        </div>   
+{/* Secondary Join Button */}
+        <div className="text-center">
+          <a 
+            href={telegramLink}
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-block trading-accent-gradient text-[var(--trading-dark)] font-bold py-4 px-8 rounded-xl text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 border-2 border-transparent hover:border-[var(--trading-accent)]"
+            data-testid="link-secondary-telegram"
+          >
+            <span className="flex items-center justify-center">
+              <span className="mr-2">📱</span>
+              JOIN TELEGRAM NOW
+              <span className="ml-2">⚡</span>
+            </span>
+          </a>
+        </div>
+      </Card>
+
+      {/* Features Section */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full max-w-4xl mb-8">
+        <Card className="bg-[var(--trading-secondary)] rounded-xl p-4 border border-gray-800 text-center" data-testid="card-feature-accuracy">
+          <div className="text-2xl mb-2">🎯</div>
+          <h3 className="font-bold text-[var(--trading-accent)] mb-1">Accurate Calls</h3>
+          <p className="text-sm text-gray-400">Proper SL & Target</p>
+        </Card>
+        
+        <Card className="bg-[var(--trading-secondary)] rounded-xl p-4 border border-gray-800 text-center" data-testid="card-feature-trading">
+          <div className="text-2xl mb-2">📊</div>
+          <h3 className="font-bold text-[var(--trading-accent)] mb-1">F&O Trading</h3>
+          <p className="text-sm text-gray-400">Study Purpose Only</p>
+        </Card>
+        
+        <Card className="bg-[var(--trading-secondary)] rounded-xl p-4 border border-gray-800 text-center sm:col-span-2 lg:col-span-1" data-testid="card-feature-calls">
+          <div className="text-2xl mb-2">⚡</div>
+          <h3 className="font-bold text-[var(--trading-accent)] mb-1">Daily Calls</h3>
+          <p className="text-sm text-gray-400">5-7 Expert Calls</p>
+        </Card>
+      </div>
+
+      {/* Disclaimer Section */}
+      <div className="text-center text-xs text-gray-500 max-w-2xl leading-relaxed" data-testid="text-disclaimer-full">
+        <p className="mb-2">
+          <strong className="text-[var(--trading-orange)]">DISCLAIMER:</strong> 
+          All trading calls are for educational and study purposes only. 
+          Trading in financial markets involves substantial risk and may not be suitable for all investors.
+        </p>
+        <p>
+          Past performance does not guarantee future results. 
+          Please consult with a financial advisor before making any investment decisions.
+        </p>
+      </div>
+    </div>
+  );
+}
+
+
+
